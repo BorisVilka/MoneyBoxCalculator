@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.mneybox.calculator.x.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.mneybox.calculator.x.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.mneybox.calculator.x.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/fragmentProfile"
+        android:name="com.mneybox.calculator.x.FragmentProfile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/fragmentTransaction"
+        android:name="com.mneybox.calculator.x.FragmentTransaction"
+        android:label="FragmentTransaction" />
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.mneybox.calculator.x.CalculatorFragment"
+        android:label="fragment_calculator"
+        tools:layout="@layout/fragment_calculator" />
+    <fragment
+        android:id="@+id/iconsFragment"
+        android:name="com.mneybox.calculator.x.IconsFragment"
+        android:label="IconsFragment" />
+    <fragment
+        android:id="@+id/fragmentCredit"
+        android:name="com.mneybox.calculator.x.FragmentCredit"
+        android:label="fragment_credit"
+        tools:layout="@layout/fragment_credit" />
+    <fragment
+        android:id="@+id/boxFragment"
+        android:name="com.mneybox.calculator.x.BoxFragment"
+        android:label="BoxFragment" />
+</navigation>

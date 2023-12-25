@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registration"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.mneybox.calculator.x.StartFragment"
+        android:label="StartFragment" >
+        <action
+            android:id="@+id/action_startFragment_to_fragmentName"
+            app:destination="@id/fragmentName" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentName"
+        android:name="com.mneybox.calculator.x.FragmentName"
+        android:label="FragmentName" >
+        <action
+            android:id="@+id/action_fragmentName_to_fragmentCurrency"
+            app:destination="@id/fragmentCurrency" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAge"
+        android:name="com.mneybox.calculator.x.FragmentAge"
+        android:label="FragmentAge" >
+        <action
+            android:id="@+id/action_fragmentAge_to_fragmentGender"
+            app:destination="@id/fragmentGender" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCurrency"
+        android:name="com.mneybox.calculator.x.FragmentCurrency"
+        android:label="fragment_currency"
+        tools:layout="@layout/fragment_currency" >
+        <action
+            android:id="@+id/action_fragmentCurrency_to_fragmentAge"
+            app:destination="@id/fragmentAge" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentGender"
+        android:name="com.mneybox.calculator.x.FragmentGender"
+        android:label="fragment_gender"
+        tools:layout="@layout/fragment_gender" />
+</navigation>
